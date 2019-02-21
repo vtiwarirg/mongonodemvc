@@ -1,0 +1,113 @@
+{
+    "variables": [],
+    "info": {
+        "name": "Postman Echo",
+        "_postman_id": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+        "description": "Postman Echo is service you can use to test your REST clients and make sample API calls. It provides endpoints for `GET`, `POST`, `PUT`, various auth mechanisms and other utility endpoints.\n\nThe documentation for the endpoints as well as example responses can be found at [https://postman-echo.com](https://postman-echo.com/?source=echo-collection-app-onboarding)",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "mongonodemvc",
+            "description": "",
+            "item": [
+                {
+                    "name": "nodeAPIlogin",
+                    "request": {
+                        "url": "http://localhost:3000/user/login",
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "description": ""
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"password\":\"123rpa\",\"email\":\"virendra.rg0101@gmail.com\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "register",
+                    "request": {
+                        "url": "http://localhost:3000/user/register",
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded",
+                                "description": ""
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "email",
+                                    "value": "vtiwari11@ishir.com",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "name",
+                                    "value": "Virendra",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "123rpa",
+                                    "description": "",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "login",
+                    "request": {
+                        "url": "http://localhost:3000/user/login",
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "description": ""
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"password\":\"123rpa\",\"email\":\"vtiwari11@ishir.com\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "userprofile",
+                    "request": {
+                        "url": "http://localhost:3000/user/profile",
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImVtYWlsIjoidnRpd2FyaUBpc2hpci5jb20iLCJuYW1lIjoiVmlyZW5kcmEiLCJleHAiOjE1NTEzNjI0MDgsImlhdCI6MTU1MDc1NzYwOH0.FjnnvuYynKlsZVy5kyufNBWk2aq-iB31ZxI_wV7wtHE",
+                                "description": ""
+                            }
+                        ],
+                        "body": {},
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ]
+}
